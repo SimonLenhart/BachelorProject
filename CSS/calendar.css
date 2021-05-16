@@ -1,0 +1,152 @@
+.cal1{
+	background:#E3E3E3;
+}
+/****/
+thead
+{
+	background: rgb(0, 172, 238, 0.7);
+}
+tbody{
+ 	background: #DEDEDE;
+  	border-top: 1px solid #ADADAD;
+	border-left: 1px solid #ADADAD;
+}
+tbody a{
+color:#474747;
+}
+/****/
+.clndr{
+	padding:0em 0;
+}
+.noselect {
+  -webkit-user-select: none;
+  /* Chrome/Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+ */
+}
+.cal1 .clndr .clndr-controls {
+    position: relative;
+  	color: #FFF;
+	font-size: 1.2em;
+	font-weight:400;
+	text-align: center;
+	background: rgb(27, 85, 169); /* Old browsers */
+	
+}
+.cal1 .clndr .clndr-controls .month {
+  	text-align: center;
+	font-size: 1.3em;
+	padding: 0.6em;
+}
+.cal1 .clndr .clndr-controls .clndr-control-button .clndr-previous-button { 
+  	position: absolute;
+	left: 0px;
+	top: -26px;
+	width: 35px;
+	height: 7px;
+	text-indent: -4000px;
+	background: url(../Images/left-arrow.png) no-repeat 50%;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	float: left;
+	border-right: 1px ridge #000000;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+    padding: 0.99em 0.85em;                                	
+    display:inline-block;
+}
+.cal1 .clndr .clndr-controls .clndr-control-button .clndr-previous-button.hovered { 
+	background-color: rgb(243, 193, 74, 0.9);
+	transform: scale(1.05);
+}
+
+.cal1 .clndr .clndr-controls .clndr-control-button .clndr-next-button { 
+   	position: absolute;
+	right: 0px;
+    top: -26px;
+    width: 35px;
+    height: 7px;
+	text-indent: -4000px;
+	background: url(../Images/right-arrow.png) no-repeat 50%;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	float: right;
+	border-left: 1px ridge #000000;
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+  	display:inline-block;
+  	padding:1em;
+}
+.cal1 .clndr .clndr-controls .clndr-control-button .clndr-next-button.hovered{
+	background-color: rgb(243, 193, 74, 0.9);
+	transform: scale(1.05);
+}
+
+.cal1 .clndr .clndr-table {
+  table-layout: fixed;
+  width:100%;
+  margin:0 auto;
+}
+.cal1 .clndr .clndr-table .header-days {
+   font-size:1.2em;
+   font-weight:500;
+}
+.cal1 .clndr .clndr-table .header-days .header-day {
+  vertical-align: middle;
+  text-align: center;
+  color: #FFF;
+  border:none;
+  text-shadow: 0.5px 1px 0.8px #C5C5C5;
+}
+.cal1 .clndr .clndr-table tr {
+    height:45px;
+}
+.cal1 .clndr .clndr-table  td {
+	vertical-align: top;
+	border-top: 1px solid #ADADAD;
+	border-left: 1px solid #ADADAD;
+	text-transform: uppercase;
+	
+}
+.cal1 .clndr .clndr-table tr .day {
+  	width: 100%;
+  	height: inherit;
+ 	color:#2C2C2C;
+ 	vertical-align:middle;
+  	cursor:pointer;
+  	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.cal1 .clndr .clndr-table tr .day.hovered {
+	background-color: rgb(243, 193, 74);
+	transform: scale(1.05);
+}
+.cal1 .clndr .clndr-table tr .day.selected {
+	background-color: rgba(0, 146, 32, 0.3);
+}
+
+.cal1 .clndr .clndr-table tr .day .day-contents {
+	 	box-sizing: border-box;
+		font-size: 1.3em;
+	 	text-align:center;
+	 	cursor:pointer;
+	 	font-weight: 900;
+}
+.cal1 .clndr .clndr-table tr .empty,
+.cal1 .clndr .clndr-table tr .adjacent-month {
+  width: 100%;
+  height: inherit;
+  color:#e49c9c;
+}

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ticket Vending Machine</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/externalStyles.css">
+</head>
+
+<body>
+  <img id="leapCursor">
+  <div id="interface">
+    <div id="callToInt">
+      <div class="upperBlock"><b>TOUCHLESS</b></div>
+      <img src="Images/info.png" class="helpSymbol" style="position: absolute; top: 17%; left: 93.5%;">
+      <p style="font-size: 50px; position: relative; text-align: center; top: -50px;">Ticket Vending Machine</p>
+      <img src="Images/hoverGif.gif" id="hoverGif">
+      <p style="position: absolute; top: 240px; left: 590px; font-size: 30px; line-height: 1.6;"> 1. Place your hand above the sensor. <br>
+        2. Move your hand over the button. <br>
+        3. Hold your position to select the button. </p>
+      <div>
+        <a style= "position: absolute; top: 450px; left: 730px; width: 170px; text-align: center; font-size: 30px;" href="#" class="btn selectable" onclick="changePanel(0)">Click Here</a>
+      </div>
+    </div>
+  
+    <div class="tabs">
+        <div class="tab-header"> <!-- This Part is for the Displaying of the Tabs-->
+          <div id="tabTicketOpt" class="active">
+            <i>Ticket Options</i> 
+          </div>
+          <div id="tabStart">
+            <i>Start/Destination</i> 
+          </div>
+          <div id="tabNumPas">
+            <i>Number of Passengers</i> 
+          </div>
+          <div id="tabDate">
+            <i>Date/Time</i> 
+          </div>
+          <div id="selConnestion">
+            <i>Connections</i> 
+          </div>
+          <div id="summary">
+            <i>Summary</i> 
+          </div>
+        </div>
+        <div class="tab-indicator"></div>
+        <div class="tab-body"> <!-- This Part is for Displaying the Content of each Tab-->
+          <div id="firstPanel">
+            <h2>Please select your desired ticket option</h2>
+            <img src="Images/info.png" class="helpSymbol"> <br> 
+            <div style="text-align: center; position: relative; top: 50px;">
+              <div class="ticketOptions selectable" onclick="changePanel(1)" style="top: 0px;">
+                <p>Single-Use</p> <br>
+                <img src="Images/ticketSymbol.png" style="width: 160px;">
+              </div>
+              <div class="ticketOptions selectable" onclick="showElement('timeTickets', true)">
+                <p>Time Ticket</p> <br>
+                <img src="Images/ticketSymbol.png" style="width: 160px;">
+                <img src="Images/time.png" style="height: 50px; position: relative; top:-26px;">
+              </div>
+              <div class="ticketOptions selectable" onclick="showElement('ticketInf', true)">
+                <p>Ticket Information</p> <br>
+                <img src="Images/ticketSymbol.png" style="width: 160px;">
+                <img src="Images/infSign.png" style="height: 60px;  position: relative; top:-22px; ">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="myContent" id="secondPanel">
+            <h2>Please choose your start and destination</h2> <br>
+            <img src="Images/info.png" class="helpSymbol">
+
+            <div style="position: relative; left: 15%; top: 10%" id="inputStartDest">
+              <label for="startInput">Start:</label>
+              <input type="text" id="startInput" onclick="showElement('keyboard', true)" value="Konstanz">
+              <label for="destInput" style="margin-left: 125px">Destination:</label>
+              <input type="text"  id="destInput" onclick="showElement('keyboard', true)">   
+            </div>
+            <div id="container">   
+              <ul id="keyboard">
+                <li class="letter">q</li>
+                <li class="letter">w</li>
+                <li class="letter">e</li>
+                <li class="letter">r</li>
+                <li class="letter">t</li>
+                <li class="letter">z</li>
+                <li class="letter">u</li>
+                <li class="letter">i</li>
+                <li class="letter">o</li>
+                <li class="letter">p</li>
+                <li class="letter">ü</li>
+                <li class="delete lastitem">Delete</li>
+                <li class="letter" style="position: relative; left: 30px;">a</li>
+                <li class="letter" style="position: relative; left: 30px;">s</li>
+                <li class="letter" style="position: relative; left: 30px;">d</li>
+                <li class="letter" style="position: relative; left: 30px;">f</li>
+                <li class="letter" style="position: relative; left: 30px;">g</li>
+                <li class="letter" style="position: relative; left: 30px;">h</li>
+                <li class="letter" style="position: relative; left: 30px;">j</li>
+                <li class="letter" style="position: relative; left: 30px;">k</li>
+                <li class="letter" style="position: relative; left: 30px;">l</li>
+                <li class="letter" style="position: relative; left: 30px;">ö</li>
+                <li class="letter" style="position: relative; left: 30px;">ä</li>
+                <li class="letter" style="visibility: hidden;"></li>
+                <li class="left-shift">Shift</li>
+                <li class="letter">y</li>
+                <li class="letter">x</li>
+                <li class="letter">c</li>
+                <li class="letter">v</li>
+                <li class="letter">b</li>
+                <li class="letter">n</li>
+                <li class="letter">m</li>
+                <li class="right-shift">Shift</li>
+                <li class="deleteAll lastitem">Delete all</li>
+                <li class="space lastitem">&nbsp;</li>
+              </ul>
+            </div>
+            <div id="displayedCities">
+              <p>Popular choices:</p><br>
+            </div> 
+            <div class="prevBtn"><p><</p></div>
+            <div class="nextBtn" style="opacity: 0.2;"><p>></p></div>
+          </div>
+
+          <div class="myContent" id="thirdPanel">
+            <h2>Show the number of passengers with your fingers</h2>
+            <img src='Images/1finger.png' class='picFinger activeFi' id='fingerPic1'> 
+            <img src='Images/2finger.png' class='picFinger transparent' id='fingerPic2'>
+            <img src='Images/4finger.png' class='picFinger transparent'id='fingerPic3'>
+            <img src="Images/info.png" class="helpSymbol"><br>
+            <div style="position: relative; left: 12%; top: 150px;">
+              <p style="position: relative; top: 100px; left: 180px;">Passengers:</p>
+              <div class="wrapper2" style="width: 200px; height: 200px;">
+                <p class="numberPas">1</p>
+                <div id="slide"></div>
+              </div>
+              <a style= "position: absolute; left: 655px; top: 30px;" id="resetBtnPas" href="#" class="btn selectable" 
+                onclick="makeGreen('restart'); document.querySelector('#resetBtnPas').classList.add('pushed'); setTimeout(function() {document.querySelector('#resetBtnPas').classList.remove('pushed');}, 800);">Change Value</a>
+              <a style= "position: absolute; left: 635px; top: 115px;" id="groupBtn" href="#" class="btn selectable" onclick="showElement('ticketInf', false)">More than 5 people</a>
+            </div>
+
+          <div class="prevBtn"><p><</p></div>
+          <div class="nextBtn" onclick="changePanel(3)"><p>></p></div>
+          </div>
+
+          <div class="myContent" id="forthPanel">
+            <h2>Select your desired date and time</h2>
+            <img src="Images/info.png" class="helpSymbol">
+            <div style="position: relative; left: 14.5%; top: 6%;">
+              <label for="dateInput">Date:</label>
+              <input type="text" id="dateInput" onclick="showElement('calendar', true)" data-year="testYear" data-month="testMonth" data-day="testDay">
+              <label for="timeInput" style="margin-left: 110px;">Departure time:</label>
+              <input type="text" id="timeInput" onclick="showElement('time', true)" data-hour="testHour" data-minute="testMinute"><br><br>      
+            </div>
+            <div class="content">
+              <div class="cal1"> </div>
+            </div>
+            <div id="displayTimeChoice"></div>
+            <div class="prevBtn"><p><</p></div>
+            <div class="nextBtn" onclick="changePanel(4)"><p>></p></div>
+          </div>
+
+          <div class="myContent" id="fifthPanel">
+            <h2>Choose your desired connection</h2>
+            <img src="Images/info.png" class="helpSymbol">
+            <p class="possibleCon"></p>
+            <div class="prevBtn"><p><</p></div>
+          </div>
+
+          <div class="myContent" id="sixthPanel">
+            <div style="position: relative; top: -45px;">
+              <h2>If all data is correct, please select your desired payment method.</h2>
+              <p style="text-align: center; position: relative; top: 40px;">To change something, select the desired input field.</p>
+            </div>
+
+            <img src="Images/info.png" class="helpSymbol">
+            <div class="grid-container">
+              <p>Start:</p>
+              <input type="text" id="startInput2" onclick="changePanel(1); document.querySelector('#startInput').value = ''; document.querySelector('#startInput').click();">
+              <p>Destination:</p>
+              <input type="text" id="destInput2" onclick="changePanel(1); document.querySelector('#destInput').value = ''; document.querySelector('#destInput').click();">
+              <p>Passengers:</p>
+              <input type="text" id="amountPas2" onclick="changePanel(2)">
+              <p>Date:</p>
+              <input type="text" id="dateInput2" onclick="changePanel(3); showElement('calendar', true)" data-year="testYear" data-month="testMonth" data-day="testDay">
+              <p>Dep. time:</p>
+              <input type="text" id="timeInput2" onclick="changePanel(3); showElement('time', true)" data-hour="testHour" data-minute="testMinute">
+              <p>Duration:</p>
+              <p id="sumDuration"></p>
+              <p>Changes:</p>
+              <p id="sumChanges"></p>
+              <p><b>Price:</b></p>
+              <p id="price"></p>
+            </div>
+
+            <div class="paymentOption selectable" onclick="showElement('cash', true)">
+              <h2>Cash</h2>
+              <img src="Images/cash.png">
+            </div>
+            <div class="paymentOption selectable" onclick="showElement('credit', true)" style="top: 77%;">
+              <h2>Debit/Credit Card </h2>
+              <img src="Images/creditCard.png">
+            </div>
+            <div class="prevBtn"><p><</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="receiveTicket">
+        <div class="upperBlock"><b>TOUCHLESS</b></div>
+        <img src="Images/info.png" class="helpSymbol" style="position: absolute; top: 18%; left: 97%;">
+        <div style="position: relative; top: -50px;">
+          <p style="font-size: 50px;">Ticket Vending Machine</p><br>
+          <p style="font-size: 35px; position: relative; top: -15px;">Please take out your ticket.</p> <br>
+          <img src="Images/arrowDown.png" style="position: relative; top: -40px; width: 110px;" id="endArrow">
+          <img src="Images/ticketSymbol.png" style="width: 250px; position: relative; top: 5px;">
+          <p style="position: relative; top: -40px; font-size: 35px;">Enjoy your trip!</p>
+        </div>  
+        <img src="Images/houseIcon.png" class="selectable" style="position: absolute; left: -1%; top: 18%; width: 65px;" onclick="window.location.reload(false)">
+      </div>
+
+    </div>
+</body>
+
+<script src="JS/calendar/jquery.js" type="text/javascript"></script>
+<script type="text/javascript" src="JS/calendar/jquery.openCarousel.js"></script> 
+<script src="https://js.leapmotion.com/leap-1.0.0.js"></script>
+<script type="text/javascript" src="JS/connectionDataFile.js"></script>
+<script type="text/javascript" src="JS/mainScript.js"></script>
+<script src= "JS/calendar/moment-2.2.1.js" type="text/javascript"></script>
+<script src="JS/calendar/clndr.js" type="text/javascript"></script>
+<script src="JS/calendar/site.js" type="text/javascript"></script>
+<link rel="stylesheet" href="CSS/calendar.css" type="text/css" />
+
+</html>
