@@ -1,8 +1,8 @@
-This folder contains the Bachelorproject of Simon Lenhart from the Human Computer Interaction department of the University of Konstanz. 
+This folder contains the my bachelorproject, which was developed at the Human Computer Interaction department of the University of Konstanz. 
 
-The project was to develop a prototype of a touch-less ticket vending machine.  
+The project topic was "Touch-less interaction with a ticket vending machine". 
+Therefore, the prototype of a fully gesture-based ticket vending machine was created. 
+The capturing of the users motions was done with the Leap Motion controller and these captured motions were then used to control the system. 
+The whole project is created as a web application and coded in HTML/CSS/JS.
 
-This task was solved by catching the users motions with the Leap Motion controller and then using these motions to control the system. 
-The whole project is coded in HTML/CSS/JS.
-
-For further questions or to request the corresponding project report, please write simon.lenhart@uni-konstanz.de or hci-sekretariat@uni-konstanz.de. 
+For further questions or to request the corresponding project report, please write an email to simon.lenhart@uni-konstanz.de or text me on LinkedIn (https://www.linkedin.com/in/simon-lenhart-ab0487210/). 
