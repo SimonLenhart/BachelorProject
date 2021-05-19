@@ -1,10 +1,10 @@
 # Prototype for Gesture-Based Ticket Vending Machine
 
-This folder contains the my bachelorproject, which was developed at the Human Computer Interaction department of the University of Konstanz. 
+This folder contains my bachelorproject, which was developed at the Human Computer Interaction department of the University of Konstanz. 
 
 ## Development
 The project topic was "Touch-less interaction with a ticket vending machine". 
-In order to examine possible interaction types and corresponding technologies, a literatur analysis was done in the preceding bachelor seminar. If you are interested in this seminar report, please contact me. <br />
+In order to examine possible interaction types and corresponding technologies, a literature analysis was done in the preceding bachelor seminar. If you are interested in this seminar report, please contact me. <br />
 Finally, I decided to control the system only via hand/finger movements. <br />
 Those movements were captured by the Leap Motion controller. 
 
