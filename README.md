@@ -24,6 +24,6 @@ For further questions or to request the corresponding project report, please wri
 https://www.youtube.com/watch?v=pKseEUggtX8&ab_channel=SimonLenhart
 
 ## Example Pictures 
-![Screenshot (138)](https://user-images.githubusercontent.com/66257427/118861474-d45b4800-b8dc-11eb-932b-9ab341290237.png)
-![Screenshot (152)](https://user-images.githubusercontent.com/66257427/118861478-d6250b80-b8dc-11eb-8662-f567faaaa4f4.png)
-
+![Screenshot (138)](https://user-images.githubusercontent.com/66257427/118861640-04a2e680-b8dd-11eb-9b22-c5787e9f7a87.png)
+![Screenshot (151)](https://user-images.githubusercontent.com/66257427/118861645-066caa00-b8dd-11eb-8750-b412ae508ab0.png)
+![Screenshot (152)](https://user-images.githubusercontent.com/66257427/118861652-08366d80-b8dd-11eb-92d0-376fc46c427c.png)
