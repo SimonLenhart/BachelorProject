@@ -22,3 +22,8 @@ For further questions or to request the corresponding project report, please wri
 
 ## Demo Video
 https://www.youtube.com/watch?v=pKseEUggtX8&ab_channel=SimonLenhart
+
+## Example Pictures 
+![Screenshot (138)](https://user-images.githubusercontent.com/66257427/118861474-d45b4800-b8dc-11eb-932b-9ab341290237.png)
+![Screenshot (152)](https://user-images.githubusercontent.com/66257427/118861478-d6250b80-b8dc-11eb-8662-f567faaaa4f4.png)
+
