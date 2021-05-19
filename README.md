@@ -20,5 +20,5 @@ Since the focus of the project was touch-less interaction, the interface is deve
 ## Further Notes
 For further questions or to request the corresponding project report, please write an email to simon.lenhart@uni-konstanz.de or text me on LinkedIn (https://www.linkedin.com/in/simon-lenhart/). 
 
-A demo video of the developed prototype can be found here: <br />
+## Demo Video
 https://www.youtube.com/watch?v=pKseEUggtX8&ab_channel=SimonLenhart
