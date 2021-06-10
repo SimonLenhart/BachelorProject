@@ -1,6 +1,6 @@
 # Prototype for Gesture-Based Ticket Vending Machine
 
-This folder contains my bachelorproject, which was developed at the Human Computer Interaction department of the University of Konstanz. 
+This folder contains my bachelor project, which was developed at the Human Computer Interaction department of the University of Konstanz. 
 
 ## Development
 The project topic was "Touch-less interaction with a ticket vending machine". 
