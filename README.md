@@ -18,7 +18,7 @@ To execute the web application, please clone/download the whole project and open
 Since the focus of the project was touch-less interaction, the interface is developed specifically for gesture-based interaction. However, it is still possible to interact with the system via mouse/keyboard.
 
 ## Further Notes
-For further questions or to request the corresponding project report, please write an email to simon.lenhart@uni-konstanz.de or text me on LinkedIn (https://www.linkedin.com/in/simon-lenhart/). 
+For further questions or to request the corresponding project report, please write an email to simon.lenhart@uni-konstanz.de or text me on [LinkedIn](https://www.linkedin.com/in/simon-lenhart/). 
 
 ## Demo Video
 https://www.youtube.com/watch?v=pKseEUggtX8&ab_channel=SimonLenhart
